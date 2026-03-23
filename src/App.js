@@ -1,6 +1,6 @@
 import "./App.css";
 import { LIST_TREE } from "./constant";
-import TreeNode from "./pages/TreeNode";
+import TreeNode from "./components/TreeNode";
 
 function App() {
   return (
