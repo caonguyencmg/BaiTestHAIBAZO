@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { LIST_TREE } from "./constant";
+import TreeNode from "./pages/TreeNode";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {LIST_TREE?.map((item) => (
+          <div>
+            <TreeNode key={item?.id} node={item}></TreeNode>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
